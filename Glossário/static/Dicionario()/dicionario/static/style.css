@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #60267A; /* Cor de fundo principal */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #673F85; /* Cor de fundo do container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilo para os botões do alfabeto */
+.alphabet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.alphabet-button {
+    background-color: #FFB033; /* Cor dos botões */
+    color: #60267A; /* Cor do texto nos botões */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.alphabet-button:hover {
+    background-color: #FFD966; /* Cor ao passar o mouse */
+    transform: translateY(-3px);
+}
+
+/* Estilos para os resultados da busca */
+#searchResults {
+    background-color: #FFB033; /* Cor de fundo dos resultados */
+    color: #60267A;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.result-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #FFFFFF; /* Fundo dos itens */
+    color: #60267A; /* Texto */
+    border-left: 5px solid #FFB033;
+    border-radius: 5px;
+}
+
+.result-item h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.result-item p {
+    margin: 0;
+    font-size: 14px;
+}
+

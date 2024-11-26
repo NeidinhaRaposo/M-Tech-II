@@ -1,0 +1,95 @@
+/* Estilos básicos */
+body {
+    background-color: #60267A;
+    color: #FFB033;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Caixa de entrada de texto */
+#textInput {
+    width: 80%;
+    max-width: 800px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #FFB033;
+    border-radius: 5px;
+}
+
+/* Botão de pop-up */
+#openPopup {
+    background-color: #FFB033;
+    color: #60267A;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Pop-up do teclado */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #673F85;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Organização das teclas */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+/* Estilo das teclas */
+.key {
+    background-color: #673F85;
+    color: #FFB033;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Teclas especiais com largura maior */
+.key.shift, .key.capslock, .key.tab, .key.enter, .key.space, .key.backspace, .key.ctrl, .key.alt {
+    grid-column: span 2;
+}
+
+.key.space {
+    grid-column: span 5;
+}
+
+/* Efeitos de hover */
+.key:hover {
+    background-color: #FFB033;
+    color: #673F85;
+}
+
+/* Botão para fechar o pop-up */
+#closePopup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FFB033;
+}
+
+

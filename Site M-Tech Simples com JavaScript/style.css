@@ -1,0 +1,194 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: url("./img/cuboroxo.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Seção Principal */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o rodapé fique na parte inferior */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+#logo {
+    width: 100px;
+}
+
+#select-languages, #btn-login {
+    height: 2rem;
+    border: none;
+    border-radius: 4px;
+}
+
+#select-languages {
+    width: 6rem;
+    background-color: white;
+    color: #60267A;
+    margin-left: auto;
+}
+
+#btn-login {
+    width: 5rem;
+    background-color: #60267A;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-login:hover {
+    background-color: #FFB033;
+}
+
+/* Cartão de História */
+.story-card {
+    min-width: 300px; /* Ajustando a largura mínima */
+    height: auto; /* Ajustando a altura */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px; /* Adicionando espaçamento interno */
+}
+
+.story-card-title {
+    font-size: 40px; /* Diminuindo o tamanho da fonte */
+    font-weight: bold;
+}
+
+.story-card-subtitle {
+    font-weight: 400;
+}
+
+/* Formulário */
+.form-hope {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Aumentando o espaço entre os elementos */
+    padding: 1rem 0;
+    align-items: center; /* Centraliza os itens do formulário */
+}
+
+.form-invitation {
+    font-weight: 400;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos dos Campos de Entrada */
+#input-email, #input-password {
+    width: 250px; /* Diminuindo a largura dos campos */
+    padding: 0.8rem; /* Diminuindo o preenchimento */
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+/* Botão do Formulário */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+    margin-top: 1px; /* Ajustando a distância acima do botão */
+}
+
+#btn-form {
+    width: 100%; /* Faz o botão ocupar toda a largura do seu contêiner */
+    max-width: 150px; /* Largura máxima do botão */
+    padding: 0.8rem; /* Diminuindo o preenchimento do botão */
+    color: white;
+    background-color: #60267A;
+    border: none;
+    font-size: 1.2rem; /* Ajustando o tamanho da fonte */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionando transição */
+}
+
+#btn-form:hover {
+    background-color: #FFB033;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .story-card {
+        min-width: 100%;
+        height: auto;
+    }
+    #input-email, #input-password, #select-languages, #btn-login, #btn-form {
+        width: 100%;
+    }
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: auto; /* Faz com que o rodapé fique na parte inferior */
+}
+
+footer img {
+    max-width: 350px;
+}
+
+/* Estilos para a tela de login */
+.login-modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+}
+/* Estilos para o popup */
+.login-content {
+    background-color: #60267A;
+    margin: 10% auto; /* Ajustado para ficar mais acima */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Para posicionar o botão de fechar */
+}
+/* Estilos para X do popup */
+.close {
+    position: absolute; /* Posiciona o botão de fechar em relação ao conteúdo */
+    top: 10px; /* Distância do topo */
+    right: 15px; /* Distância da direita */
+    font-size: 32px; /* Tamanho da fonte do botão de fechar */
+    color: black; /* Cor do botão de fechar */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.close:hover {
+    color: #FFB033; /* Cor ao passar o mouse */
+}

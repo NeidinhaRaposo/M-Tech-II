@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Letras em Popup da Professora Neidiman do M-Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="openCalculator">Abrir Calculadora de Letras da Professora Neidiman do M-Tech</button>
+
+  <!-- Popup da calculadora -->
+  <div id="calculatorPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closeCalculator">&times;</span>
+      <h2>Calculadora de Letras da Professora Neidiman do M-Tech</h2>
+      <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="keys">
+          <!-- Letras no lugar dos números -->
+          <button onclick="pressKey('A')">A</button>
+          <button onclick="pressKey('B')">B</button>
+          <button onclick="pressKey('C')">C</button>
+          <button onclick="pressKey('/')">/</button>
+          <button onclick="pressKey('D')">D</button>
+          <button onclick="pressKey('E')">E</button>
+          <button onclick="pressKey('F')">F</button>
+          <button onclick="pressKey('*')">×</button>
+          <button onclick="pressKey('G')">G</button>
+          <button onclick="pressKey('H')">H</button>
+          <button onclick="pressKey('I')">I</button>
+          <button onclick="pressKey('-')">-</button>
+          <button onclick="pressKey('J')">J</button>
+          <button onclick="pressKey('K')">K</button>
+          <button onclick="pressKey('L')">L</button>
+          <button onclick="pressKey('+')">+</button>
+          <button onclick="pressKey('%')">%</button>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="backspace()">⌫</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

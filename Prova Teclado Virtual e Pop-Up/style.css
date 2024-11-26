@@ -1,0 +1,125 @@
+body {
+    background-color: #60267A;
+    color: #FFB033;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    height: 100vh;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #673F85;
+    color: #FFB033;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #FFB033;
+    color: #673F85;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #673F85;
+    color: #FFB033;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+}
+
+#closePopup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FFB033;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.key {
+    background-color: #673F85;
+    color: #FFB033;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.key:hover {
+    background-color: #FFB033;
+    color: #673F85;
+}
+
+.key:active {
+    background-color: #FFB033;
+    color: #673F85;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 5px;
+}
+
+#keyboard .key.shift,
+#keyboard .key.ctrl,
+#keyboard .key.alt,
+#keyboard .key.capslock {
+    width: 120px;
+}
+
+#keyboard .key.space {
+    grid-column: span 4;
+}
+
+
+
+
+
+

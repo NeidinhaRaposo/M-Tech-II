@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Descubra sua idade</h1>
+        <button onclick="calcularIdade()">Calcular Idade</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularIdade() {
+            let anoNascimento = parseInt(prompt("Digite o ano do seu nascimento:"));
+            let anoAtual = new Date().getFullYear();
+
+            if (isNaN(anoNascimento)) {
+                document.getElementById("resultado").innerText = "Por favor, insira um ano válido.";
+                return;
+            }
+
+            let idade = anoAtual - anoNascimento;
+            document.getElementById("resultado").innerText = "Você tem " + idade + " anos.";
+        }
+    </script>
+</body>
+</html>

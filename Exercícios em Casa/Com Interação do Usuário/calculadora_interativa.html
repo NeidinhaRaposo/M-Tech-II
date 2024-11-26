@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <button onclick="iniciarCalculo()">Calcular</button>
+    <p id="Resultado"></p>
+
+    <script>
+        function iniciarCalculo() {
+            let num1 = parseFloat(prompt("Digite o primeiro número:"));
+            let num2 = parseFloat(prompt("Digite o segundo número:"));
+            let operacao = prompt("Digite a operação (soma, subtracao, multiplicacao, divisao):");
+
+            function calcular(a, b, operacao) {
+                if (operacao === "Soma") {
+                    return a + b;
+                } else if (operacao === "Subtracao") {
+                    return a - b;
+                } else if (operacao === "Multiplicacao") {
+                    return a * b;
+                } else if (operacao === "Divisao") {
+                    return a / b;
+                } else {
+                    return "Operação Inválida.";
+                }
+            }
+
+            let resultado = calcular(num1, num2, operacao);
+            document.getElementById("Resultado").innerText = "Resultado: " + resultado;
+        }
+    </script>
+</body>
+</html>
+

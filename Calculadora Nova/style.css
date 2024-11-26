@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 5;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #60267A, #673F85, #FFB033);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.left {
+    width: 50%;
+    text-align: justify; /* Justifica o texto */
+}
+
+.right {
+    width: 40%;
+    display: flex;
+    justify-content: center; /* Centraliza a calculadora na área direita */
+}
+
+.calculator {
+    background-color: #673F85;
+    padding: 8px;
+    border-radius: 26px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Ajuste para manter os botões organizados */
+}
+
+.calculator-image {
+    width: 120px; /* Definindo um tamanho intermediário para que fique visível */
+    height: auto;
+    display: block;
+    margin: 0 auto 50px; /* Centralizando e adicionando um pequeno espaço abaixo */
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    background-color: #FFB033;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #60267A;
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens no rodapé */
+    padding: 20px;
+    background: linear-gradient(to right, #60267A, #673F85, #FFB033); /* Fundo do rodapé com as cores desejadas */
+}
+
+.footer-image {
+    width: 140px; /* Aumenta o tamanho fixo para as imagens do rodapé */
+    height: auto; /* Mantém a proporção das imagens */
+    object-fit: contain; /* Ajusta a imagem dentro do espaço disponível, mantendo a proporção */
+    margin: 0 10px; /* Espaço entre as imagens do rodapé */
+}
+
+.right img {
+    max-width: 100%; /* Garante que a imagem na direita não exceda o contêiner */
+    height: auto; /* Mantém a proporção */
+}
+
+
+

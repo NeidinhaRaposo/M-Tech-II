@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(to bottom right, #60267A, #673F85, #FFB033);
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.intro-text {
+  max-width: 300px;
+  text-align: justify;
+}
+
+.calculator {
+  width: 300px;
+  background-color: #FFB033;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Centraliza o conteúdo da calculadora */
+}
+
+.calculator-image {
+  width: 100px; /* Tamanho menor da imagem */
+  margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  background-color: #60267A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  background-color: #673F85;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #60267A;
+}
+
+button:active {
+  background-color: #FFB033;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Espaçamento entre as imagens do rodapé */
+  padding: 5px 0; /* Menor espaçamento no rodapé */
+  /* Removido o background-color para deixar transparente */
+  background-color: transparent; /* Rodapé agora sem cor de fundo */
+}
+
+.footer-image {
+  max-width: 150px; /* Tamanho reduzido da imagem do rodapé */
+  border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora da Professora Neidiman do M-Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Calculadora da Professora Neidiman do M-Tech</h1>
+  <div class="container">
+    <header class="intro">
+      <div class="intro-text">
+        <p>Bem-vindo à Calculadora da Professora Neidiman do M-Tech! Esta calculadora é uma ferramenta simples 
+           para realizar operações matemáticas básicas, incluindo soma, subtração,
+           multiplicação e divisão. Para usá-la, basta clicar nos números e operadores, 
+           e o resultado aparecerá na tela ao pressionar "=".
+        </p>
+      </div>
+    </header>
+    <div class="calculator">
+      <img src="img/mtech_transparente.png" alt="Calculadora" class="calculator-image"> <!-- Imagem centralizada e menor -->
+      <input type="text" id="display" disabled>
+      <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteLast()">⌫</button>
+        <button onclick="appendCharacter('%')">%</button>
+        <button onclick="appendCharacter('/')">/</button>
+        <button onclick="appendCharacter('7')">7</button>
+        <button onclick="appendCharacter('8')">8</button>
+        <button onclick="appendCharacter('9')">9</button>
+        <button onclick="appendCharacter('*')">*</button>
+        <button onclick="appendCharacter('4')">4</button>
+        <button onclick="appendCharacter('5')">5</button>
+        <button onclick="appendCharacter('6')">6</button>
+        <button onclick="appendCharacter('-')">-</button>
+        <button onclick="appendCharacter('1')">1</button>
+        <button onclick="appendCharacter('2')">2</button>
+        <button onclick="appendCharacter('3')">3</button>
+        <button onclick="appendCharacter('+')">+</button>
+        <button onclick="appendCharacter('0')">0</button>
+        <button onclick="appendCharacter('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer class="footer">
+    <img src="img/Logo Branca.png" alt="Secretaria" class="footer-image">
+    <!--<img src="img/logo_proj_lucas01.png" alt="Secretaria" class="footer-image">-->
+  </footer>
+</body>
+</html>
+

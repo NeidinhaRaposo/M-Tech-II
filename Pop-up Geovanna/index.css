@@ -1,0 +1,9 @@
+.janela-modal{
+    display: none;
+}
+
+
+
+.janela-modal.abrir{
+    display: flex;
+}
